@@ -1,0 +1,116 @@
+/* Global Styles */
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  :root {
+    --primary-color: #007BFF; /* Bright Blue */
+    --secondary-color: #0056b3; /* Darker Blue */
+    --background-color: #1a1a2e; /* Deep Blue Background */
+    --text-color: #ffffff;
+    --button-hover: #0051a3; /* Darker Shade of Blue */
+    --correct-color: #28a745; /* Green for Correct Answer */
+    --wrong-color: #dc3545; /* Red for Wrong Answer */
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  h1 {
+    position: absolute;
+    top: 30px;
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 2.5rem;
+  }
+  
+  /* Main Container */
+  .container {
+    width: 90%;
+    max-width: 700px;
+    background: #23395d;
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Buttons */
+  .btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background: var(--primary-color);
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .btn:hover {
+    background: var(--button-hover);
+    color: white;
+  }
+  
+  .btn.correct {
+    background-color: var(--correct-color);
+  }
+  
+  .btn.wrong {
+    background-color: var(--wrong-color);
+    color: white;
+  }
+  
+  /* Button Grid */
+  .btn-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin: 20px 0;
+  }
+  
+  .start-btn, .next-btn {
+    background: var(--secondary-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 12px 25px;
+    border-radius: 8px;
+  }
+  
+  .start-btn:hover, .next-btn:hover {
+    background: #004080;
+  }
+  
+  /* Question Styling */
+  #question {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Controls */
+  .controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  /* Hide Class */
+  .hide {
+    display: none;
+  }
+  
